@@ -1,0 +1,10 @@
+fastapi>=0.111
+uvicorn[standard]>=0.30
+docling
+transformers>=4.45
+torch>=2.2; platform_system != "Darwin"
+torchvision>=0.17; platform_system != "Darwin"
+easyocr>=1.7
+huggingface_hub[hf_xet]>=0.25
+numpy<2  # to avoid ABI issues with some precompiled deps on Windows
+pypdf>=3
